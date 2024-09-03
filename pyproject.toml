@@ -1,0 +1,16 @@
+[project]
+name = "r4py"
+version = "0.1.0"
+description = "Rust for Python Programmers."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs-material==9.5.34",
+    "mkdocs-git-committers-plugin-2",
+    "mkdocs-git-revision-date-localized-plugin",
+    "mkdocs-git-authors-plugin",
+    "mkdocs-include-markdown-plugin",
+]
+
+[tool.uv]
+dev-dependencies = []

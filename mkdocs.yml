@@ -1,0 +1,40 @@
+site_name: Rust for Python Programmers
+site_author: Florian Kromer
+copyright: Copyright &copy; 2024 Florian Kromer
+
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.path
+    - navigation.indexes
+    - navigation.footer
+
+plugins:
+  - search:
+      enabled: true
+      lang: en
+  - include-markdown
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: fkromer/r4py
+      branch: main
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fkromer/r4py/tree/main
+
+markdown_extensions:
+  - tables
+
+# Page tree
+nav:
+  - Home: index.md
+  - Content:
+    - Ecosystem: ecosystem.md
+    - Inspiration: inspiration.md
+  - Contributing: contributing.md
+  - Donating: donating.md

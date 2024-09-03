@@ -1,0 +1,14 @@
+# Mac/OSX
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Python environments
+.venv/
+
+# Python
+*.egg-info/
+
+# mkdocs-material
+.cache/
