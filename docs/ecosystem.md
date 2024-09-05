@@ -1,16 +1,31 @@
 # Ecosystem
 
-The Rust ecosystem is w.r.t. tooling pretty consistent. The Python ecosystem is more fragmented (especially when it comes to package management).
-
 ## Cheatsheet
 
 ### Tooling
 
+W.r.t. tooling the Rust ecosystem seems to be more consistent than the Python ecosystem.
+
 | Purpose | Python | Rust |
 | ------- | ------ | ---- |
-| Package Management | [uv](https://github.com/astral-sh/uv) | [cargo](https://github.com/rust-lang/cargo) |
-| Formatting | [ruff](https://github.com/astral-sh/ruff) | [rustfmt (cargo fmt)](https://github.com/rust-lang/rustfmt) |
-| Static type Checking | [mypy](https://github.com/python/mypy) | (not required, does compiler) |
+| Package Management | [`uv`](https://github.com/astral-sh/uv) | [`cargo`](https://github.com/rust-lang/cargo) |
+| Linting (code) | [`ruff check`](https://docs.astral.sh/ruff/linter/#ruff-check) (via [linter rule selection](https://docs.astral.sh/ruff/linter/) for a lot of drop-in tool replacements) | [`cargo clippy`](https://doc.rust-lang.org/clippy/usage.html#cargo-subcommand) (via [clippy](https://github.com/rust-lang/rust-clippy)) |
+| Formatting (syntax) | [`ruff format`](https://docs.astral.sh/ruff/formatter/) ([in a black compatible manner](https://docs.astral.sh/ruff/formatter/#black-compatibility)) | `cargo fmt` (via [rustfmt](https://github.com/rust-lang/rustfmt)) |
+| Formatting (imports) | [`ruff format`](https://github.com/astral-sh/ruff) (via [`select = ["I"]`](https://docs.astral.sh/ruff/rules/#isort-i)) | [`cargo fmt`](https://github.com/rust-lang/rustfmt) (via [rustfmt](https://github.com/rust-lang/rustfmt)) |
+| Formatting (docstring code examples) | [`ruff format`](https://docs.astral.sh/ruff/formatter/#docstring-formatting) | ? |
+| Static Type Checking | [`mypy`](https://github.com/python/mypy) | (not required, handled by compiler) |
+| Package Documentation Generation | [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) or [sphinx](https://www.sphinx-doc.org/) | [`cargo doc`](https://doc.rust-lang.org/cargo/commands/cargo-doc.html)/[`cargo rustdoc`](https://doc.rust-lang.org/cargo/commands/cargo-rustdoc.html) |
+| Package API Generation | [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) + [mkdocstrings](https://mkdocstrings.github.io/) or [sphinx](https://www.sphinx-doc.org/) + [sphinx.ext.autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html) | [`cargo doc`](https://doc.rust-lang.org/cargo/commands/cargo-doc.html)/[`cargo rustdoc`](https://doc.rust-lang.org/cargo/commands/cargo-rustdoc.html) |
+
+### IDEs
+
+| Purpose | Python | Rust |
+| ------- | ------ | ---- |
+| Full Blown | [PyCharm](https://www.jetbrains.com/pycharm/) | [RustRover](https://www.jetbrains.com/rust/) |
+| [VSCode](https://github.com/microsoft/vscode) | Extensions: [ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | Extensions: [rust-lang.rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) |
+| [Emacs](https://www.gnu.org/software/emacs/) | [Elpy](https://github.com/jorgenschaefer/elpy) | [rust-analyzer](https://rust-analyzer.github.io/manual.html#emacs) |
+| [Vim](https://www.vim.org/) | [vim-lsp](https://github.com/prabirshrestha/vim-lsp) | [rust-analyzer](https://rust-analyzer.github.io/manual.html#vimneovim) |
+| [Zed](https://zed.dev/) | natively via [tree-sitter-python](https://github.com/tree-sitter/tree-sitter-python) and [pyright](https://github.com/microsoft/pyright) | natively via [tree-sitter-rust](https://github.com/tree-sitter/tree-sitter-rust) and [rust-analyzer](https://rust-analyzer.github.io/manual.html#zed) |
 
 ### Debugging
 
