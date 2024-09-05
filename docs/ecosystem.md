@@ -1,6 +1,6 @@
 # Ecosystem
 
-## Cheatsheet
+## Cheat Sheet
 
 ### Tooling
 
