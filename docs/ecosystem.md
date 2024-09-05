@@ -9,6 +9,8 @@ W.r.t. tooling the Rust ecosystem seems to be more consistent than the Python ec
 | Purpose | Python | Rust |
 | ------- | ------ | ---- |
 | Package Management | [`uv`](https://github.com/astral-sh/uv) | [`cargo`](https://github.com/rust-lang/cargo) |
+| SBOM Generation (SPDX) | ? | `cargo spdx` via [cargo-spdx](https://github.com/alilleybrinker/cargo-spdx) |
+| SBOM Generation (CycloneDX) | ? | `cargo cyclonedx` via [cargo-cyclonedx](https://github.com/CycloneDX/cyclonedx-rust-cargo/blob/main/cargo-cyclonedx/README.md) |
 | Linting (code) | [`ruff check`](https://docs.astral.sh/ruff/linter/#ruff-check) (via [linter rule selection](https://docs.astral.sh/ruff/linter/) for a lot of drop-in tool replacements) | [`cargo clippy`](https://doc.rust-lang.org/clippy/usage.html#cargo-subcommand) (via [clippy](https://github.com/rust-lang/rust-clippy)) |
 | Formatting (syntax) | [`ruff format`](https://docs.astral.sh/ruff/formatter/) ([in a black compatible manner](https://docs.astral.sh/ruff/formatter/#black-compatibility)) | `cargo fmt` (via [rustfmt](https://github.com/rust-lang/rustfmt)) |
 | Formatting (imports) | [`ruff format`](https://github.com/astral-sh/ruff) (via [`select = ["I"]`](https://docs.astral.sh/ruff/rules/#isort-i)) | [`cargo fmt`](https://github.com/rust-lang/rustfmt) (via [rustfmt](https://github.com/rust-lang/rustfmt)) |
