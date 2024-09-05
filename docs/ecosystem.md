@@ -46,6 +46,6 @@ W.r.t. tooling the Rust ecosystem seems to be more consistent than the Python ec
 | Purpose | Python | Rust |
 | ------- | ------ | ---- |
 | Unit Testing | [pytest](https://github.com/pytest-dev/pytest) | (cargo test) |
-| Code Coverage Checking |  | [tarpaulin](https://github.com/xd009642/tarpaulin) |
+| Code Coverage Checking | [coverage](https://github.com/nedbat/coveragepy) | [tarpaulin](https://github.com/xd009642/tarpaulin) |
 | Property Based Testing | [hypothesis](https://github.com/HypothesisWorks/hypothesis) | [proptest](https://github.com/proptest-rs/proptest) |
 | Snapshot Testing | [syrupy (pytest plugin)](https://github.com/syrupy-project/syrupy) |[insta](https://github.com/mitsuhiko/insta) |
