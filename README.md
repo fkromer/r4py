@@ -16,3 +16,9 @@ You are free to share (copy and redistribute) the material in any medium or form
 ## Contribution
 
 [![Contribute in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/fkromer/r4py)
+
+# Donating
+
+If you would like to donate a coffee or two, you are very welcome to do so:
+
+[![Donate with PayPal](https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png)](paypal.me/fkromer)
