@@ -19,7 +19,13 @@ Refer to [`CONTRIBUTING.md`](./CONTRIBUTING.md) for more information how to cont
 
 [![Contribute in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/fkromer/r4py)
 
-# Donating
+## Contributors
+
+<a href="https://github.com/fkromer/r4py/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=fkromer/r4py" />
+</a>
+
+## Donating
 
 If you would like to donate a coffee or two, you are very welcome to do so:
 
